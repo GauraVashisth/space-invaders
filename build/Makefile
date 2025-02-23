@@ -117,48 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named space_invaders
+# Target rules for targets named SpaceInvaders
 
 # Build rule for target.
-space_invaders: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 space_invaders
-.PHONY : space_invaders
+SpaceInvaders: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SpaceInvaders
+.PHONY : SpaceInvaders
 
 # fast build rule for target.
-space_invaders/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_invaders.dir/build.make CMakeFiles/space_invaders.dir/build
-.PHONY : space_invaders/fast
-
-src/game.o: src/game.cpp.o
-.PHONY : src/game.o
-
-# target to build an object file
-src/game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_invaders.dir/build.make CMakeFiles/space_invaders.dir/src/game.cpp.o
-.PHONY : src/game.cpp.o
-
-src/game.i: src/game.cpp.i
-.PHONY : src/game.i
-
-# target to preprocess a source file
-src/game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_invaders.dir/build.make CMakeFiles/space_invaders.dir/src/game.cpp.i
-.PHONY : src/game.cpp.i
-
-src/game.s: src/game.cpp.s
-.PHONY : src/game.s
-
-# target to generate assembly for a file
-src/game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_invaders.dir/build.make CMakeFiles/space_invaders.dir/src/game.cpp.s
-.PHONY : src/game.cpp.s
+SpaceInvaders/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/build
+.PHONY : SpaceInvaders/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_invaders.dir/build.make CMakeFiles/space_invaders.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -166,7 +142,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_invaders.dir/build.make CMakeFiles/space_invaders.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -174,7 +150,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/space_invaders.dir/build.make CMakeFiles/space_invaders.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -185,10 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... space_invaders"
-	@echo "... src/game.o"
-	@echo "... src/game.i"
-	@echo "... src/game.s"
+	@echo "... SpaceInvaders"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

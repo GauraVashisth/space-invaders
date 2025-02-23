@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/gaurav/Projects/space-invaders/src/game.cpp" "CMakeFiles/space_invaders.dir/src/game.cpp.o" "gcc" "CMakeFiles/space_invaders.dir/src/game.cpp.o.d"
-  "/Users/gaurav/Projects/space-invaders/src/main.cpp" "CMakeFiles/space_invaders.dir/src/main.cpp.o" "gcc" "CMakeFiles/space_invaders.dir/src/main.cpp.o.d"
+  "/Users/gaurav/Projects/space-invaders/src/main.cpp" "CMakeFiles/SpaceInvaders.dir/src/main.cpp.o" "gcc" "CMakeFiles/SpaceInvaders.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
