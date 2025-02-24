@@ -7,10 +7,11 @@ void error_callback(int error, const char *description) {
 }
 
 int main(int argc, char *argv[]) {
-
+  //initialzing glfw library
   if (!glfwInit())
     return -1;
 
+  //creates a window
   GLFWwindow *window = glfwCreateWindow(640, 480, "Space Invaders", NULL, NULL);
   if (!window) {
     glfwTerminate();
