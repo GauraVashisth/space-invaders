@@ -7,18 +7,22 @@ void error_callback(int error, const char *description) {
 }
 
 int main(int argc, char *argv[]) {
-  //initialzing glfw library
+  // initialzing glfw library
   if (!glfwInit())
     return -1;
 
-  //creates a window
+  // creates a window
+  // specifies window title, and resolution
   GLFWwindow *window = glfwCreateWindow(640, 480, "Space Invaders", NULL, NULL);
   if (!window) {
     glfwTerminate();
     return -1;
   }
+  //make subsequent opengl calls
   glfwMakeContextCurrent(window);
 
+
+  //initilaize glew, a loading library
   GLenum err = glewInit();
   if (err != GLEW_OK) {
     fprintf(stderr, "Error initializing GLEW.\n");
@@ -32,7 +36,9 @@ int main(int argc, char *argv[]) {
 
   printf("Using OpenGL: %d.%d\n", glVersion[0], glVersion[1]);
 
+
   // game loop:
+  // specifies window color, here red
   glClearColor(1.0, 0.0, 0.0, 1.0);
   while (!glfwWindowShouldClose(window)) {
     glClear(GL_COLOR_BUFFER_BIT);
@@ -42,7 +48,7 @@ int main(int argc, char *argv[]) {
     glfwPollEvents();
   }
 
-  // cleanup and close
+  // cleanup and exit
   glfwDestroyWindow(window);
   glfwTerminate();
   return 0;
